@@ -4,10 +4,10 @@
 [![Build Status](https://travis-ci.org/HNeukermans/adal-ts.svg?branch=master)](https://travis-ci.org/HNeukermans/adal-ts)
 ![live demo](https://img.shields.io/badge/demo-live-orange.svg)
 
-# adal-ts
+# ng2-adal-ts
 A typescript library that allows you to authenticate against Azure Active Directory
 
-aka adal.js typescript rewrite
+aka adal.js typescript rewrite (Forked from https://github.com/HNeukermans/adal-ts)
 
 ## technical features:
  1. 100% typescript
