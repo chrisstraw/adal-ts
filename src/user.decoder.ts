@@ -1,4 +1,5 @@
 import { User } from './user';
+import * as _ from 'js-base64';
 
 declare function escape(v: string): string;
 
