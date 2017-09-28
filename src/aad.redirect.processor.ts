@@ -8,7 +8,7 @@ export class AadRedirectProcessor {
     constructor(private queryStringDeserializer: QueryStringDeserializer, private userDecoder: UserDecoder, private storage: Storage, private window: Window) {
     }
 
-    public process(): boolean {
+    public process(redirectUri?: string): boolean {
 
         let deserializedHash = this.queryStringDeserializer.deserialize(this.window.location.hash);
         let aadRedirect = new AadRedirectUrl(deserializedHash);
@@ -16,7 +16,10 @@ export class AadRedirectProcessor {
             let userProfile = this.userDecoder.decode(aadRedirect.idToken || aadRedirect.accesToken);
             this.storage.setItem(Constants.STORAGE.IDTOKEN, aadRedirect.idToken || '');
             this.storage.setItem(Constants.STORAGE.ACCESSTOKEN, aadRedirect.accesToken || '');
-            this.window.location.assign(this.storage.getItem(Constants.STORAGE.LOGIN_REQUEST));
+            //this.window.location.assign(this.storage.getItem(Constants.STORAGE.LOGIN_REQUEST));  //Removed, this is a bad assumption
+            if (redirectUri){
+                this.window.location.assign(redirectUri);
+            }
         }
 
         return aadRedirect.isAadRedirect();

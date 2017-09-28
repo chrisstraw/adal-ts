@@ -16,9 +16,7 @@ export class Authentication {
     constructor() {
     }
 
-    public static getContext(configuration: AdalConfig): AuthenticationContext {
-
-        console.log('getContext...');
+    public static getContext(configuration: AdalConfig): AuthenticationContext {        
 
         let context = new AuthenticationContext(
             configuration,
