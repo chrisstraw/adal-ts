@@ -1,7 +1,7 @@
 {
-  "name": "adal-ts-v2",
-  "version": "2.0.0",
-  "description": "adal.js typescript rewrite",
+  "name": "ng2-adal-ts",
+  "version": "0.1.0",
+  "description": "Updated Version of adal-ts v0.6.0",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "types": "dist/index.d.ts",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HNeukermans/adal-ts.git"
+    "url": "git+https://github.com/chrisstraw/adal-ts/adal-ts.git"
   },
   "keywords": [
     "adal",
@@ -25,9 +25,9 @@
   "author": "Hannes Neukermans",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HNeukermans/adal-ts/issues"
+    "url": "https://github.com/chrisstraw/adal-ts/issues"
   },
-  "homepage": "https://github.com/HNeukermans/adal-ts#readme",
+  "homepage": "https://github.com/chrisstraw/adal-ts/#readme",
   "devDependencies": {
     "@types/jasmine": "^2.2.33",
     "@types/js-base64": "^2.1.5",
